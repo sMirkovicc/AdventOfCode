@@ -26,19 +26,19 @@ int main(int argc, char** argv)
                     case 'o':
                         if(line[i+1] == 'n' & line[i+2] == 'e')
                         {
-                            number = "one";
+                            number = "on";
                             line.replace(line.find(number), number.size(), "1");
                         }
                         break;
                     case 't':
                         if(line[i+1] == 'w' & line[i+2] == 'o')
                         {
-                            number = "two";
+                            number = "tw";
                             line.replace(line.find(number), number.size(), "2");
                         }
                         else if(line[i+1] == 'h' & line[i+2] == 'r' & line[i+3] == 'e' & line[i+4] == 'e')
                         {
-                            number = "three";
+                            number = "thre";
                             line.replace(line.find(number), number.size(), "3");
                         }
                         break;
@@ -50,7 +50,7 @@ int main(int argc, char** argv)
                         }
                         else if(line[i+1] == 'i' & line[i+2] == 'v' & line[i+3] == 'e')
                         {
-                            number = "five";
+                            number = "fiv";
                             line.replace(line.find(number), number.size(), "5");
                         }
                         break;
@@ -62,21 +62,21 @@ int main(int argc, char** argv)
                         }
                         else if(line[i+1] == 'e' & line[i+2] == 'v' & line[i+3] == 'e' & line[i+4] == 'n')
                         {
-                            number = "seven";
+                            number = "seve";
                             line.replace(line.find(number), number.size(), "7");
                         }
                         break;
                     case 'e':
                         if(line[i+1] == 'i' & line[i+2] == 'g' & line[i+3] == 'h' & line[i+4] == 't')
                         {
-                            number = "eight";
+                            number = "eigh";
                             line.replace(line.find(number), number.size(), "8");
                         }
                         break;
                     case 'n':
                         if(line[i+1] == 'i' & line[i+2] == 'n' & line[i+3] == 'e')
                         {
-                            number = "nine";
+                            number = "nin";
                             line.replace(line.find(number), number.size(), "9");
                         }
                         break;
@@ -85,7 +85,6 @@ int main(int argc, char** argv)
             firstDigit = line.find_first_of("0123456789");
             secondDigit = line.find_last_of("0123456789");
             calVal = (line[firstDigit] - '0')*10 + (line[secondDigit] - '0');
-            //std::cout << "calVal: " << calVal << std::endl;
             sum += calVal;
         }
         myFile.close();
