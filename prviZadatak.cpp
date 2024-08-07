@@ -24,57 +24,57 @@ int main(int argc, char** argv)
                 switch(letter)
                 {
                     case 'o':
-                        if(line[i+1] == 'n' & line[i+2] == 'e')
+                        if(line[i+1] == 'n' && line[i+2] == 'e')
                         {
                             number = "on";
                             line.replace(line.find(number), number.size(), "1");
                         }
                         break;
                     case 't':
-                        if(line[i+1] == 'w' & line[i+2] == 'o')
+                        if(line[i+1] == 'w' && line[i+2] == 'o')
                         {
                             number = "tw";
                             line.replace(line.find(number), number.size(), "2");
                         }
-                        else if(line[i+1] == 'h' & line[i+2] == 'r' & line[i+3] == 'e' & line[i+4] == 'e')
+                        else if(line[i+1] == 'h' && line[i+2] == 'r' && line[i+3] == 'e' && line[i+4] == 'e')
                         {
                             number = "thre";
                             line.replace(line.find(number), number.size(), "3");
                         }
                         break;
                     case 'f':
-                        if(line[i+1] == 'o' & line[i+2] == 'u' & line[i+3] == 'r')
+                        if(line[i+1] == 'o' && line[i+2] == 'u' && line[i+3] == 'r')
                         {
                             number = "four";
                             line.replace(line.find(number), number.size(), "4");
                         }
-                        else if(line[i+1] == 'i' & line[i+2] == 'v' & line[i+3] == 'e')
+                        else if(line[i+1] == 'i' && line[i+2] == 'v' && line[i+3] == 'e')
                         {
                             number = "fiv";
                             line.replace(line.find(number), number.size(), "5");
                         }
                         break;
                     case 's':
-                        if(line[i+1] == 'i' & line[i+2] == 'x')
+                        if(line[i+1] == 'i' && line[i+2] == 'x')
                         {
                             number = "six";
                             line.replace(line.find(number), number.size(), "6");
                         }
-                        else if(line[i+1] == 'e' & line[i+2] == 'v' & line[i+3] == 'e' & line[i+4] == 'n')
+                        else if(line[i+1] == 'e' && line[i+2] == 'v' && line[i+3] == 'e' && line[i+4] == 'n')
                         {
                             number = "seve";
                             line.replace(line.find(number), number.size(), "7");
                         }
                         break;
                     case 'e':
-                        if(line[i+1] == 'i' & line[i+2] == 'g' & line[i+3] == 'h' & line[i+4] == 't')
+                        if(line[i+1] == 'i' && line[i+2] == 'g' && line[i+3] == 'h' && line[i+4] == 't')
                         {
                             number = "eigh";
                             line.replace(line.find(number), number.size(), "8");
                         }
                         break;
                     case 'n':
-                        if(line[i+1] == 'i' & line[i+2] == 'n' & line[i+3] == 'e')
+                        if(line[i+1] == 'i' && line[i+2] == 'n' && line[i+3] == 'e')
                         {
                             number = "nin";
                             line.replace(line.find(number), number.size(), "9");
