@@ -17,7 +17,7 @@ int main(int argc, char** argv)
     if (myFile.is_open())
     {
         std::size_t colon, vBar, pos, check;
-        std::string winningNumber = "", number;
+        std::string winningNumber = "";
 
         while (getline(myFile, line))
         {
